@@ -1,0 +1,38 @@
+#toggleTags{
+    width: 50px;
+    text-align: center;
+    font-size: 26px;
+    left: 0;
+    cursor: pointer;
+}
+
+#tag-header{
+    left: 50px;
+    width: 200px;
+}
+
+#tag{
+    border: 0;
+    height: 100%;
+    width:100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+#head{
+    background: rgba(255, 255, 255, 0.7);
+    left: 250px;
+    right: 0;
+    background-image: repeating-linear-gradient(to left, white 10px, #f1f1f1 18px, #ffffff 10px);
+    cursor: w-resize;
+    opacity: 0.9;
+    z-index: 40;
+}
+
+#head > input{
+    margin: 0;
+    background: rgba(255, 255, 255, 0.95);
+    border: 0;
+    font-size: 24px;
+    width: 200px;
+}

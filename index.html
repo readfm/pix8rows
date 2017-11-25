@@ -1,0 +1,86 @@
+<html><head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta charset="utf-8">
+	<title>Pix8</title>
+	<meta name="description" content="Import/Export images.">
+	<meta name="keywords" content="images,pictures,photos">
+	<link href="/design/interface.css" rel="stylesheet" type="text/css">
+	
+	<link rel="icon" type="image/png" href="/design/logo.png"/>
+	
+	<script src="lib/jquery.js"></script>
+	<script src="lib/sugar.js"></script>
+	<script src="lib/jquery.event.drag.js"></script>
+	<script src="lib/jquery.event.drop.js"></script>
+	<script src="lib/sortable.js"></script>
+	<script src="lib/js.cookie.js"></script>
+	<script src="lib/omggif.js"></script>
+
+
+	<script src="lib/functions.js"></script>
+
+	
+	<script src="/config.js"></script>
+
+	<script src="/lib/ws.js"></script>
+	<script src="/modules/site.js"></script>
+	<script src="/modules/layout.js"></script>
+	<link href="/design/layout.css" rel="stylesheet" type="text/css">
+
+	<script src="/modules/images.js"></script>
+	<link href="/design/images.css" rel="stylesheet" type="text/css">
+
+	<script src="/modules/builder.js"></script>
+
+	<link href="/design/progress.css" rel="stylesheet" type="text/css">
+
+	<link href="//fonts.googleapis.com/css?family=Comfortaa:400,300,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Lato:400,300,100" rel="stylesheet" >
+</head>
+
+<body>
+	<div id="modal"></div>
+
+	<div id='pix' class='app'>
+		<header id="toggleTags" title="Toggle tags">&#9776;</header>
+		<header id='tag-header'>
+			<input id='tag' placeholder='tag'/>
+		</header>
+		<header id='head'></header>
+		<header id='ctrl'></header>
+
+		<div id='images'>
+			<div id='images-list'></div>
+			<div id='remove'></div>
+		</div>
+
+		<style id='style-thumbs'></style>
+
+		<div id="fb-root"></div>
+	</div>
+
+	<div id='tags'></div>
+	<style id='styleApps'></style>
+
+	<div id='intro' class='app' style='text-align: center;'>
+		<iframe id="player" type="text/html" width="720" height="390" src="https://www.youtube.com/embed/YDn1gvQMQdQ?enablejsapi=1&amp;origin=http://pix8.co" frameborder="0"></iframe>
+
+  		<h1><font color="grey,gray">Pix8. Better pictures. Faster.</font></h1>
+		<h1><a href="mailto:duke@pix8.co?subject=invite">Do it.</a></h1><h1>
+	</h1>
+	</div>
+
+	
+	<textarea id='clipboard'></textarea>
+
+	
+	<div id='progress' class="pie-wrapper progress-90">
+		<div id="progress-label">00%</div>
+		<div id="progress-tasks">~0</div>
+		<div class="pie">
+			<div class="left-side half-circle"></div>
+			<div class="right-side half-circle"></div>
+		</div>
+	</div>
+</body>
+</html>
